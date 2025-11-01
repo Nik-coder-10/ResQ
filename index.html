@@ -1,0 +1,154 @@
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ResQ - Disaster Management System</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/responsive.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <div class="container">
+        <div class="auth-container">
+            <div class="logo-section">
+                <img src="photos/logo.png" alt="ResQ Logo" class="logo-img">
+                <h1>ResQ</h1>
+                <p>Your Safety, Our Priority</p>
+            </div>
+            <div class="form-container" id="loginForm">
+                <h2>Welcome Back</h2>
+                <form id="login-form">
+                    <div class="input-group">
+                        <i class="fas fa-envelope"></i>
+                        <input type="email" id="login-email" placeholder="Email" required>
+                    </div>
+                    <div class="input-group">
+                        <i class="fas fa-lock"></i>
+                        <input type="password" id="login-password" placeholder="Password" required>
+                    </div>
+                    <button type="submit" class="btn-primary">Login</button>
+                    <p class="toggle-form">Don't have an account? <span id="showSignup">Sign Up</span></p>
+                </form>
+            </div>
+            <div class="form-container hidden" id="signupForm">
+                <h2>Create Account</h2>
+                <form id="signup-form">
+                    <div class="input-group">
+                        <i class="fas fa-user"></i>
+                        <input type="text" id="signup-name" placeholder="Full Name" required>
+                    </div>
+                    <div class="input-group">
+                        <i class="fas fa-envelope"></i>
+                        <input type="email" id="signup-email" placeholder="Email" required>
+                    </div>
+                    <div class="input-group">
+                        <i class="fas fa-phone"></i>
+                        <input type="tel" id="signup-phone" placeholder="Phone Number" required>
+                    </div>
+                    <div class="input-group">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <input type="text" id="signup-address" placeholder="Address" required>
+                    </div>
+                    <div class="input-group">
+                        <i class="fas fa-globe"></i>
+                        <input type="text" id="signup-city" placeholder="City" required>
+                    </div>
+                    <div class="location-group">
+                        <div class="input-group">
+                            <i class="fas fa-map-pin"></i>
+                            <input type="number" id="signup-latitude" placeholder="Latitude" step="any">
+                        </div>
+                        <div class="input-group">
+                            <i class="fas fa-map-pin"></i>
+                            <input type="number" id="signup-longitude" placeholder="Longitude" step="any">
+                        </div>
+                    </div>
+                    <button type="button" class="btn-secondary" id="getLocationBtn">
+                        <i class="fas fa-location-arrow"></i> Get My Location
+                    </button>
+                    <div class="input-group">
+                        <i class="fas fa-lock"></i>
+                        <input type="password" id="signup-password" placeholder="Password" required>
+                    </div>
+                    <button type="submit" class="btn-primary">Sign Up</button>
+                    <p class="toggle-form">Already have an account? <span id="showLogin">Login</span></p>
+                </form>
+            </div>
+        </div>
+    </div>
+    
+    <div class="weather-forecast hidden" id="weatherForecast">
+        <h2>6-Day Weather Forecast</h2>
+        <div class="weather-container" id="weatherContainer">
+            <div class="weather-loading">
+                <i class="fas fa-spinner fa-spin"></i> Loading weather data...
+            </div>
+        </div>
+    </div>
+    
+    <footer class="site-footer">
+        ResQ pvt ltd all rights reserved @2025
+    </footer>
+    <script src="js/auth.js"></script>
+</body>
+</html> -->
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ResQ - Disaster Management System</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/responsive.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-brand">
+                <img src="photos/logo.png" alt="ResQ Logo" class="logo-img" width="3000" height="auto">
+                <span>ResQ</span>
+            </div>
+            <div class="nav-menu">
+                <a href="index.html" class="active">Home</a>
+                <a href="chatbot.html">Chatbot</a>
+                <a href="helpline.html">Helpline</a>
+                <a href="map.html">Map</a>
+                <a href="login.html" id="logout">Admin</a>
+            </div>
+        </div>
+    </nav>
+    <div class="container">
+        <div class="welcome-section">
+            <!-- <h1>Hello, <span id="userName">User</span>!</h1> -->
+            <p id="userLocation">Location: Loading...</p>
+        </div>
+        <div class="alerts-section">
+            <h2>Active Alerts for Your Area</h2>
+            <div id="activeAlerts" class="alerts-container"></div>
+        </div>
+        <div class="predictions-section">
+            <h2>Disaster Predictions (Next 7 Days)</h2>
+            <!-- <div class="filter-buttons">
+                <button class="filter-btn active" data-filter="all">All</button>
+                <button class="filter-btn" data-filter="flood">Floods</button>
+                <button class="filter-btn" data-filter="earthquake">Earthquakes</button>
+                <button class="filter-btn" data-filter="storm">Storms</button>
+            </div> -->
+            <div id="predictions" class="predictions-container"></div>
+        </div>
+        <!-- <div class="weather-section">
+            <h2>Weather Forecast</h2>
+            <div id="weatherForecast" class="weather-container"></div>
+        </div> -->
+    </div>
+    <footer class="site-footer">
+        ResQ Pvt Ltd All Rights Reserved @2025
+    </footer>
+    <script src="js/utils.js"></script>
+    <script src="js/notify.js"></script>
+</body>
+</html>

@@ -1,0 +1,16 @@
+{
+  "name": "resq",
+  "version": "1.0.0",
+  "description": "A comprehensive disaster management system with real-time notifications, predictions, and interactive mapping.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^5.1.0"
+  }
+}

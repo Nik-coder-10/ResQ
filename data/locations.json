@@ -1,0 +1,13 @@
+{
+    "hospitals": [
+        { "name": "City General Hospital", "lat": 0.005, "lon": 0.005, "type": "hospital" },
+        { "name": "Emergency Medical Center", "lat": 0.01, "lon": 0.01, "type": "hospital" }
+    ],
+    "shelters": [
+        { "name": "Community Shelter", "lat": -0.01, "lon": 0.01, "type": "shelter" },
+        { "name": "Emergency Shelter", "lat": 0.02, "lon": -0.01, "type": "shelter" }
+    ],
+    "safeZones": [],
+    "dangerZones": [],
+    "distressSignals": []
+}

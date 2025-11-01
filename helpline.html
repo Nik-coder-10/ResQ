@@ -1,0 +1,94 @@
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Helpline - ResQ</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/responsive.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-brand">
+                <img src="photos/logo.png" alt="ResQ Logo" class="logo-img">
+                <span>ResQ</span>
+            </div>
+            <div class="nav-menu">
+                <a href="chatbot.html">Chatbot</a>
+                <a href="helpline.html" class="active">Helpline</a>
+                <a href="notify.html">Notifications</a>
+                <a href="map.html">Map</a>
+                <a href="#" id="logoutBtn">Logout</a>
+            </div>
+        </div>
+    </nav>
+    <div class="container">
+        <div class="predictions-section">
+            <h2>Helplines</h2>
+            <div id="helplines" class="predictions-container">
+            </div>
+        </div>
+    </div>
+    <footer class="site-footer">
+        ResQ pvt ltd all rights reserved @2025
+    </footer>
+    <script src="js/helpline.js"></script>
+</body>
+</html> -->
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Helpline - ResQ</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/responsive.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-brand">
+                <img src="photos/logo.png" alt="ResQ Logo" class="logo-img">
+                <span>ResQ</span>
+            </div>
+            <div class="nav-menu">
+                <div class="nav-location">
+                    <div class="location-input-container">
+                        <i class="fas fa-map-marker-alt location-icon"></i>
+                        <input type="text" id="userLocationInput" placeholder="Enter your location" class="location-input">
+                        <button id="updateLocationBtn" class="location-update-btn" title="Update location">
+                            <i class="fas fa-check"></i>
+                        </button>
+                    </div>
+                    <div id="locationStatus" class="location-status">
+                        <i class="fas fa-spinner fa-spin"></i>
+                    </div>
+                </div>
+                <a href="index.html">Home</a>
+                <a href="chatbot.html">Chatbot</a>
+                <a href="helpline.html" class="active">Helpline</a>
+                <a href="map.html">Map</a>
+                <a href="login.html" id="logout">Admin</a>
+            </div>
+        </div>
+    </nav>
+    <div class="container">
+        <div class="predictions-section">
+            <h2>Helplines</h2>
+            <div id="helplines" class="predictions-container">
+                <!-- Helpline cards will be dynamically inserted here -->
+            </div>
+        </div>
+    </div>
+    <footer class="site-footer">
+        ResQ pvt ltd all rights reserved @2025
+    </footer>
+    <script src="js/helpline.js"></script>
+    <!-- <script src="js/notify.js"></script> -->
+</body>
+</html>

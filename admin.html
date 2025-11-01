@@ -1,0 +1,119 @@
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interactive Map - ResQ</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/responsive.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-brand">
+                <img src="photos/logo.png" alt="ResQ Logo" class="logo-img">
+                <span>ResQ</span>
+            </div>
+            <div class="nav-menu">
+                <a href="chatbot.html">Chatbot</a>
+                <a href="helpline.html">Helpline</a>
+                <a href="notify.html">Notifications</a>
+                <a href="map.html" class="active">Map</a>
+                <a href="#" id="logoutBtn">Logout</a>
+            </div>
+        </div>
+    </nav>
+    <div class="map-container">
+        <div id="map"></div>
+        <div class="map-controls">
+            <button class="control-btn alarm-btn" id="alarmBtn">
+                <i class="fas fa-exclamation-triangle"></i>
+                <span>Mark current location as Danger</span>
+            </button>
+        </div>
+        <div class="info-panel" id="infoPanel">
+            <button id="getLocationBtn">Get current location</button>
+            <h2></h2>
+        </div>
+    </div>
+    <footer class="site-footer">
+        ResQ pvt ltd all rights reserved @2025
+    </footer>
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+    <script src="https://unpkg.com/leaflet.heat/dist/leaflet-heat.js"></script>
+    <script src="js/map.js"></script>
+</body>
+</html>  -->
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interactive Map - ResQ.</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/responsive.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-brand">
+                <img src="photos/logo.png" alt="ResQ.Ai Logo" class="logo-img">
+                <span>ResQ</span>
+            </div>
+            <div class="nav-menu">
+                <!-- <div class="nav-location">
+                    <div class="location-input-container">
+                        <i class="fas fa-map-marker-alt location-icon"></i>
+                        <input type="text" id="userLocationInput" placeholder="Enter your location" class="location-input">
+                        <button id="updateLocationBtn" class="location-update-btn" title="Update location">
+                            <i class="fas fa-check"></i>
+                        </button>
+                    </div>
+                    <div id="locationStatus" class="location-status">
+                        <i class="fas fa-spinner fa-spin"></i>
+                    </div> 
+                </div> -->
+                <a href="index.html">Home</a>
+                <a href="chatbot.html">Chatbot</a>
+                <a href="helpline.html">Helpline</a>
+                <a href="map.html" class="active">Map</a>
+                <a href="login.html" id="logout">Admin</a>
+            </div>
+        </div>
+    </nav>
+    <div class="map-container">
+        <div id="map"></div>
+        <div class="map-controls">
+            <button class="control-btn alarm-btn" id="alarmBtn">
+                <i class="fas fa-exclamation-triangle"></i>
+                <span>Mark current location as Danger</span>
+            </button>
+            <button class="control-btn safe-btn" id="safeBtn">
+                <i class="fas fa-check-circle"></i>
+                <span>Mark current location as SafeZone</span>
+            </button>
+            <button class="control-btn location-btn" id="getLocationBtn">
+                <i class="fas fa-location-arrow"></i>
+                <span>Get current location</span>
+            </button>
+        </div>
+        <!-- <div class="info-panel" id="infoPanel">
+            <button id="getLocationBtn">Get current location</button>
+            <h2></h2>
+        </div> -->
+    </div>
+    <footer class="site-footer">
+        ResQ pvt ltd all rights reserved @2025
+    </footer>
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+    <script src="https://unpkg.com/leaflet.heat/dist/leaflet-heat.js"></script>
+    <script src="js/map.js"></script>
+    <script src="js/admin.js"></script>
+</body>
+</html>

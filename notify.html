@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Disaster Notifications - ResQ</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/responsive.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-brand">
+                <img src="photos/logo.png" alt="ResQ Logo" class="logo-img">
+                <span>ResQ</span>
+            </div>
+            <div class="nav-menu">
+                <a href="chatbot.html">Chatbot</a>
+                <a href="helpline.html">Helpline</a>
+                <a href="notify.html" class="active">Notifications</a>
+                <a href="map.html">Map</a>
+                <a href="#" id="logoutBtn">Logout</a>
+            </div>
+        </div>
+    </nav>
+    <div class="container">
+        <div class="welcome-section">
+            <h1>Hello, <span id="userName">User</span>!</h1>
+            <p id="userLocation">Location: Loading...</p>
+        </div>
+        <div class="alerts-section">
+            <h2>Active Alerts for Your Area</h2>
+            <div id="activeAlerts" class="alerts-container"></div>
+        </div>
+        <div class="predictions-section">
+            <h2>Disaster Predictions (Next 7 Days)</h2>
+            <div class="filter-buttons">
+                <button class="filter-btn active" data-filter="all">All</button>
+                <button class="filter-btn" data-filter="flood">Floods</button>
+                <button class="filter-btn" data-filter="earthquake">Earthquakes</button>
+                <button class="filter-btn" data-filter="storm">Storms</button>
+            </div>
+            <div id="predictions" class="predictions-container"></div>
+        </div>
+        <div class="weather-section">
+            <h2>Weather Forecast</h2>
+            <div id="weatherForecast" class="weather-container"></div>
+        </div>
+    </div>
+    <footer class="site-footer">
+        ResQ pvt ltd all rights reserved @2025
+    </footer>
+    <script src="js/utils.js"></script>
+    <script src="js/notify.js"></script>
+</body>
+</html>

@@ -1,0 +1,22 @@
+[
+    {
+        "id": 1,
+        "type": "flood",
+        "severity": "high",
+        "date": "2025-11-02T00:00:00.000Z",
+        "probability": 75,
+        "description": "Heavy rainfall expected, potential flooding in low-lying areas",
+        "affectedAreas": ["Downtown", "Riverside"],
+        "precautions": "Move to higher ground, secure belongings"
+    },
+    {
+        "id": 2,
+        "type": "storm",
+        "severity": "medium",
+        "date": "2025-11-04T00:00:00.000Z",
+        "probability": 60,
+        "description": "Tropical storm approaching, strong winds expected",
+        "affectedAreas": ["Coastal areas"],
+        "precautions": "Secure outdoor items, stay indoors"
+    }
+]
